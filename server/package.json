@@ -4,15 +4,21 @@
   "description": "",
   "main": "src/server.ts",
   "scripts": {
+    "start": "nodemon src/server.ts",
     "test": "rm -rf build && prettier --write src/ && tsc"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@types/express": "^4.17.21",
-    "@types/mongoose": "^5.11.97",
     "express": "^4.18.2",
     "firebase-admin": "^12.0.0",
-    "mongose": "^0.0.2-security"
+    "mongoose": "^8.1.1",
+    "nodemon": "^3.0.3",
+    "save-dev": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "@types/mongoose": "^5.11.97",
+    "ts-node": "^10.9.2"
   }
 }
