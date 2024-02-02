@@ -1,15 +1,21 @@
 const config = {
-    firebase: {
-        apiKey: "AIzaSyCOrgYQvjZ_5tmsQtMbKYPdbmNmTtUwsCY",
-        authDomain: "molham-typescript.firebaseapp.com",
-        projectId: "molham-typescript",
-        storageBucket: "molham-typescript.appspot.com",
-        messagingSenderId: "1073236978848",
-        appId: "1:1073236978848:web:0823b806844f3d11c9edc5"
-      },
+    mongo: {
+        option:{
+            useUnifiedTopology: true,
+            useNewUrlParser: true,
+            socketTimeoutMS: 30000,
+            keepAlive: true,
+            poolSize: 50,
+            autoIndex: false,
+            retryWrites: false
+        },
+        url: 'mongodb+srv://molham-typescript:1235812@cluster0.2p7x7r7.mongodb.net/molham-typescript',
+    },
     server:{
-        url: 'http://localhost:3000'
+        host: 'localhost',
+        port: 3000
     }
 }
+
 
 export default config;
