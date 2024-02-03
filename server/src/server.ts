@@ -11,7 +11,7 @@ const server = express();
 const httpServer = HTTP.createServer(server);
 
 /**connect to the firebase */
-let serviceAccountKey = require('./config/serviceAccountKey.json');
+let serviceAccountKey = require('./config/serverAccountKey.json');
 
 firebaseAdmin.initializeApp({
     credential:firebaseAdmin.credential.cert(serviceAccountKey)
